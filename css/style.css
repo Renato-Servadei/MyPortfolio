@@ -10,7 +10,7 @@
 
 .nav-link:hover,
 .nav-item:hover {
-    color: yellow;
+    color: orange;
 }
 
 .masthead {
@@ -24,22 +24,25 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    opacity: 0.9;
 }
 
 .masthead h1,
 .masthead .h1 {
-    color: rgba(237, 223, 14, 0.82);
+    color: orange;
     font-size: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 0.2rem;
     background-clip: text;
+    text-shadow: 2px 2px 2px black;
 }
 
 .masthead h2,
 .masthead .h2 {
     max-width: 20rem;
-    font-size: 1rem;
-    color: rgba(237, 223, 14, 0.82);
+    font-size: 1.5rem;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
 }
 
 @media (min-width: 768px) {
@@ -68,15 +71,20 @@
     }
 }
 
-.card-section {
+.card-group {
     height: 100vh;
-    padding: 5vh 0 5vh 0;
+    padding-top: 5em;
     background: linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.card>img {
+    height: 15em;
+    width: auto;
 }
 
 .about-section {
     height: 100vh;
-    padding-top: 10rem;
+    padding-top: 15em;
     background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 
@@ -89,6 +97,8 @@
     vertical-align: middle;
     font-size: 2em;
     color: orange;
+    text-shadow: 1px 1px 1px black;
     padding-top: 20%;
     line-height: 3em;
+    list-style-image: url("class = fa-brands fa-free-code-camp fa-2xl");
 }
